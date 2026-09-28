@@ -12,7 +12,7 @@ nav a { display:inline-block; color:inherit; width:1em; height:1em; vertical-ali
 nav a + a { margin-left:.2em; }
 nav a:hover { opacity:1; }
 /* Icon hover glow: same light as the seam, following the cursor. */
-nav a::before { content:""; position:absolute; z-index:-1; left:var(--gx,50%); top:var(--gy,50%); width:100%; height:100%; transform:translate(-50%,-50%) scale(3); background:radial-gradient(circle,rgba(227,240,255,.9),rgba(105,163,255,.30) 42%,transparent 70%); opacity:0; transition:opacity .65s ease; pointer-events:none; }
+nav a::before { content:""; position:absolute; z-index:-1; left:var(--gx,50%); top:var(--gy,50%); width:100%; height:100%; transform:translate(-50%,-50%) scale(2.2); background:radial-gradient(circle,rgba(227,240,255,.5),rgba(105,163,255,.16) 42%,transparent 70%); opacity:0; transition:opacity .65s ease; pointer-events:none; }
 nav a.glow-active::before { opacity:1; }
 nav svg { width:100%; height:100%; }
 a:hover { opacity:.7; }
