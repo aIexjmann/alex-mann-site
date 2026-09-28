@@ -7,21 +7,33 @@
   <meta name="description" content="Alex Mann is a writer, director, and producer based in Los Angeles.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    function sizeType() {
+      const scale = innerWidth <= 800 ? Math.round(50 + innerWidth * .04) : Math.floor(innerHeight * .09);
+      document.documentElement.style.fontSize = scale + '%';
+    }
+    sizeType();
+    addEventListener('resize', sizeType);
+  </script>
 </head>
 <body>
-  <div class="portrait"><img src="portrait.jpg" alt="Portrait of Alex Mann" width="3057" height="3363"></div>
+  <div class="portrait"><img src="portrait-neon-first.png" alt="Portrait of Alex Mann" width="1504" height="1680"></div>
   <main aria-label="About Alex Mann">
-    <p><strong>ALEX MANN</strong> is a writer, director, and producer.</p>
-    <p>He’s currently writing feature films for Ridley Scott’s <strong>Scott Free</strong>, Shawn Levy’s <strong>21 Laps</strong>, and Sylvester Stallone’s <strong>Balboa Productions</strong>.</p>
+    <div class="biography">
+    <p><strong>ALEX MANN&nbsp;</strong>is a writer, director, and producer.</p>
+    <p>He’s currently writing feature films for Ridley Scott’s <strong>Scott Free</strong>, Shawn Levy’s&nbsp;<strong>21 Laps</strong>, and Sylvester Stallone’s <strong>Balboa Productions</strong>.</p>
     <p>He is the founder and CEO of <strong>Space Oddity</strong>, a next-gen content studio backed by <strong>Snap Inc</strong>.</p>
     <p>Mann’s short films have accumulated over a billion views and been featured by <strong>CNN</strong>, <strong>The Los Angeles Times</strong> and <strong>New York Magazine</strong>.</p>
-    <p>He's a sought-after commercial director for brands including <strong>Netflix</strong>, <strong>TikTok</strong>, <strong>Amazon</strong>, and <strong>Verizon</strong>.</p>
-    <p>Outside of filmmaking, Mann is a contributing writer for <strong>VICE</strong> and <strong>The New Yorker</strong>.</p>
-    <p>Mann is a member of the <strong>Writers Guild of America</strong> and represented by <strong>The Gotham Group</strong>. He lives with his wife and two children in <strong>Los Angeles</strong>.</p>
+    <p>He's a sought-after commercial director for brands including&nbsp;<strong>Netflix</strong>,&nbsp;<strong>TikTok</strong>, <strong>Amazon</strong>, and <strong>Verizon</strong>.</p>
+    <p>Outside of filmmaking, Mann is a contributing writer for&nbsp;<strong>VICE</strong> and <strong>The New Yorker</strong>.</p>
+    <p>Mann is a member of the <strong>Writers Guild of America</strong> and represented by&nbsp;<strong>The Gotham Group</strong>. He lives with his wife and two children in <strong>Los Angeles</strong>.</p>
     <nav aria-label="Contact">
       <a href="https://www.instagram.com/alexjmann/" aria-label="Alex Mann on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
       <a href="mailto:alex@spaceoddity.xyz" aria-label="Email Alex Mann"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="m3 5 9 8 9-8"/></svg></a>
     </nav>
+    </div>
   </main>
+  <div class="seam-light" aria-hidden="true"></div>
+  <script src="seam.js"></script>
 </body>
 </html>
